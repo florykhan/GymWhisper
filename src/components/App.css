@@ -391,6 +391,9 @@ html.dark .header {
 
 .header-menu-btn {
   justify-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 6px;
   border-radius: 12px;
 }
@@ -417,11 +420,13 @@ html.dark .header-menu-btn:focus-visible {
 
 .lang-select {
   justify-self: end;
+  display: flex;
+  align-items: center;
   background: transparent;
   border: 2.5px solid var(--color-accent);
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 12px;
-  font-size: clamp(14px, 1.4vw, 16px);
+  font-size: clamp(13px, 1.3vw, 15px);
   font-weight: 600;
   color: var(--color-text);
   cursor: pointer;
