@@ -8,8 +8,8 @@
  * The application uses HashRouter instead of BrowserRouter to ensure compatibility
  * with GitHub Pages deployment, which doesn't support server-side routing.
  * 
- * IMPORTANT: The basename="/GymWhisper" is required for GitHub Pages deployment
- * to the subdirectory https://florykhan.github.io/GymWhisper/
+ * IMPORTANT: HashRouter does NOT use basename - the hash routing is client-side only.
+ * The homepage field in package.json handles asset path prefixing for GitHub Pages.
  * 
  * @author GymWhisper Team
  * @version 1.0.0
@@ -24,7 +24,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter basename="/GymWhisper">
+  <HashRouter>
     <LanguageProvider>
       <App />
     </LanguageProvider>
