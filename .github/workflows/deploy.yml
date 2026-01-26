@@ -1,15 +1,5 @@
 name: Test and Deploy to GitHub Pages
 
-# This workflow is the PRIMARY deployment method for GitHub Pages.
-# It uses GitHub Actions to automatically build and deploy on push to main.
-# 
-# IMPORTANT: GitHub Pages settings must be configured as follows:
-# - Go to: Settings → Pages
-# - Source: Select "GitHub Actions" (NOT "Deploy from a branch")
-# - This workflow will handle all deployments automatically
-#
-# The site will be available at: https://florykhan.github.io/GymWhisper/
-
 on:
   push:
     branches: [ main ]
@@ -67,8 +57,10 @@ jobs:
     - name: Build project
       run: npm run build:no-lint
       env:
+        PUBLIC_URL: /GymWhisper
         REACT_APP_GEMINI_API_KEY: ${{ secrets.REACT_APP_GEMINI_API_KEY }}
       # The build output will be in ./build directory
+      # PUBLIC_URL ensures %PUBLIC_URL% in index.html (favicon, etc.) resolves correctly on GitHub Pages.
       # This is configured by the "homepage" field in package.json
     
     - name: Setup Pages
