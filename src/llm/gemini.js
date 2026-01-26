@@ -1,11 +1,18 @@
 import { GoogleGenAI } from '@google/genai';
 //SET TEMPERATURE to 0
 //Dont let user ramble on, check before continuing
-const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
-if (!apiKey) {
-  throw new Error('REACT_APP_GEMINI_API_KEY environment variable is not set. Please add it to your .env file.');
+
+/**
+ * Gets the Gemini API client instance, or null if API key is missing
+ * @returns {GoogleGenAI|null}
+ */
+function getGeminiClient() {
+  const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
+  if (!apiKey) {
+    return null;
+  }
+  return new GoogleGenAI({ apiKey });
 }
-const ai = new GoogleGenAI({ apiKey });
 const csvDataPrompt = `You are part of a workout tracking application. 
 You will only reply with CSV data values.
 Extract the following data from the user's workout description in this format: workoutType,Reps,Weight[,NeedsReview]
@@ -87,6 +94,11 @@ Now analyze the following workout data and report on the user's performance over
  */
 export async function generatePerformanceReport(workoutData, language = 'en') {
   try {
+    const ai = getGeminiClient();
+    if (!ai) {
+      return { error: 'Gemini API key is not configured. Please set REACT_APP_GEMINI_API_KEY in your .env file.', status: 503 };
+    }
+
     if (!Array.isArray(workoutData) || workoutData.length === 0) {
       return { error: 'Missing or invalid \'workoutData\' parameter.', status: 400 };
     }
@@ -122,6 +134,10 @@ export async function generatePerformanceReport(workoutData, language = 'en') {
 
 export async function callGeminiAPI(text, language = 'en') {
   try {
+    const ai = getGeminiClient();
+    if (!ai) {
+      return { error: 'Gemini API key is not configured. Please set REACT_APP_GEMINI_API_KEY in your .env file.', status: 503 };
+    }
     
     // Add language-specific instruction to the prompt
     const languageInstruction = language === 'fr' ? '\n\nIMPORTANT: Reply in French.' : '';

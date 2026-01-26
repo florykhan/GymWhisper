@@ -65,6 +65,8 @@ export const translations = {
     // Error messages
     browserNotSupported: 'Your browser does not support speech recognition',
     microphonePermission: 'Please give microphone permission',
+    geminiDisabled: 'Gemini AI is disabled in this deployment (missing API key). Voice transcription will not work.',
+    geminiError: 'Gemini API error. Please check your API key configuration.',
     
     // Dark mode
     lightMode: 'Light Mode',
@@ -141,6 +143,8 @@ export const translations = {
     // Error messages
     browserNotSupported: 'Votre navigateur ne prend pas en charge la reconnaissance vocale',
     microphonePermission: 'Veuillez autoriser l\'accès au microphone',
+    geminiDisabled: 'Gemini AI est désactivé dans ce déploiement (clé API manquante). La transcription vocale ne fonctionnera pas.',
+    geminiError: 'Erreur de l\'API Gemini. Veuillez vérifier votre configuration de clé API.',
     
     // Dark mode
     lightMode: 'Mode clair',

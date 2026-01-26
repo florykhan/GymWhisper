@@ -18,6 +18,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import HomePage from './HomePage';
 import HistoryPage from './historyPage';
+import GeminiBanner from './GeminiBanner';
 
 /**
  * Main App component that handles routing and shared state management.
@@ -29,9 +30,12 @@ export default function App() {
   const [workoutData, setWorkoutData] = useState([]);
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage workoutData={workoutData} setWorkoutData={setWorkoutData} />} />
-      <Route path="/history" element={<HistoryPage />} />
-    </Routes>
+    <>
+      <GeminiBanner />
+      <Routes>
+        <Route path="/" element={<HomePage workoutData={workoutData} setWorkoutData={setWorkoutData} />} />
+        <Route path="/history" element={<HistoryPage />} />
+      </Routes>
+    </>
   );
 }

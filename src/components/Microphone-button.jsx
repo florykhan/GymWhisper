@@ -66,12 +66,24 @@ export default function MicrophoneButton({
       try {
         const response = await callGeminiAPI(transcript, language);
 
-        updateWorkoutData(response.result); 
-
-        setToastVisible(true);
+        if (response.error) {
+          // Handle API key missing or other errors
+          if (response.status === 503) {
+            // API key missing - show user-friendly message
+            alert(t('geminiDisabled'));
+          } else {
+            // Other API errors
+            console.error('LLM API error:', response.error);
+            alert(t('geminiError'));
+          }
+        } else if (response.result) {
+          updateWorkoutData(response.result); 
+          setToastVisible(true);
+        }
 
       } catch (error) {
         console.error('LLM API error:', error);
+        alert(t('geminiError'));
       }
       resetTranscript();
     }

@@ -37,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "gh-pages": "^6.1.1",
     "typescript": "^4.9.5"
   },
   "browserslist": {
@@ -51,5 +52,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://cmpt-276-summer-2025.github.io/final-project-9-pines"
+  "homepage": "https://florykhan.github.io/GymWhisper"
 }

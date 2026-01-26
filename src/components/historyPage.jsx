@@ -254,7 +254,12 @@ export default function HistoryPage() {
       if (response && response.summary) {
         setSummaryText(response.summary);
       } else if (response && response.error) {
-        setSummaryError(response.error);
+        // Provide user-friendly error message
+        if (response.status === 503) {
+          setSummaryError(t('geminiDisabled'));
+        } else {
+          setSummaryError(response.error || t('geminiError'));
+        }
       } else {
         setSummaryError('Failed to get summary.');
       }
