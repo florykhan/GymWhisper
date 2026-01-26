@@ -58,6 +58,16 @@ The app is automatically deployed to GitHub Pages via GitHub Actions when change
 - **Live Website:** https://florykhan.github.io/GymWhisper/
 - **GitHub Repo:** https://github.com/florykhan/GymWhisper
 
+### Initial Setup (One-Time)
+
+**⚠️ IMPORTANT:** Before the first deployment, configure GitHub Pages settings:
+
+1. Go to: **https://github.com/florykhan/GymWhisper/settings/pages**
+2. Under **"Source"**, select: **"GitHub Actions"** (NOT "Deploy from a branch")
+3. Click **Save**
+
+After this one-time setup, deployments will happen automatically on every push to `main`.
+
 ### Note on GitHub Pages Deployment
 
 The GitHub Pages deployment runs **without** the Gemini API key for security reasons. This means:

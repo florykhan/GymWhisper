@@ -8,6 +8,9 @@
  * The application uses HashRouter instead of BrowserRouter to ensure compatibility
  * with GitHub Pages deployment, which doesn't support server-side routing.
  * 
+ * IMPORTANT: The basename="/GymWhisper" is required for GitHub Pages deployment
+ * to the subdirectory https://florykhan.github.io/GymWhisper/
+ * 
  * @author GymWhisper Team
  * @version 1.0.0
  */

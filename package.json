@@ -13,6 +13,7 @@
     "lint": "eslint src --ext .js,.jsx --fix",
     "lint:check": "eslint src --ext .js,.jsx"
   },
+  "_comment_deployment": "Primary deployment: GitHub Actions (see .github/workflows/deploy.yml). The 'deploy' script is kept as backup for manual gh-pages branch deployment.",
   "dependencies": {
     "@google/genai": "^1.10.0",
     "framer-motion": "^12.23.9",
