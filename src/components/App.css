@@ -396,6 +396,7 @@ html.dark .header {
   justify-content: center;
   padding: 6px;
   border-radius: 12px;
+  transform: translateY(-2px);
 }
 
 .header-menu-btn:hover,
@@ -432,6 +433,7 @@ html.dark .header-menu-btn:focus-visible {
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
   appearance: none;
+  transform: translateY(-2px);
 }
 
 .lang-select:hover,
@@ -1014,6 +1016,7 @@ html.dark {
   align-items: center;
   justify-content: center;
   justify-self: center; /* center within grid middle column */
+  transform: translateY(-2px);
 }
 
 /* Minimalistic microphone icon — scaled with record btn */
