@@ -3,8 +3,14 @@ import { GoogleGenAI } from '@google/genai';
 //Dont let user ramble on, check before continuing
 
 /**
- * Gets the Gemini API client instance, or null if API key is missing
- * @returns {GoogleGenAI|null}
+ * Gets the Gemini API client instance, or null if API key is missing.
+ *
+ * SECURITY: The API key is read ONLY from process.env.REACT_APP_GEMINI_API_KEY.
+ * Set it in .env or .env.local (project root). Never log or expose the key.
+ * We check at runtime (not import time); when missing, we return null and
+ * callers return a safe fallback (e.g. { error, status: 503 }). No throw.
+ *
+ * @returns {GoogleGenAI|null} Client if key is set, null otherwise.
  */
 function getGeminiClient() {
   const apiKey = process.env.REACT_APP_GEMINI_API_KEY;

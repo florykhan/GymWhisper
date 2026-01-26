@@ -26,17 +26,22 @@ cd GymWhisper
 npm install
 ```
 
-### Step 3 – Set Up Environment Variables (Optional)
+### Step 3 – Set Up Environment Variables (Optional, local development only)
 
-The app will work without a Gemini API key, but AI voice transcription features will be disabled.
+The app will work without a Gemini API key, but AI voice transcription features will be disabled. The key is **required only for local development** when you want Gemini features.
 
-To enable Gemini AI features, create a `.env` file in the root directory:
+To enable Gemini AI features locally:
+
+1. In the **project root**, create a file named `.env.local` (or `.env`).
+2. Add exactly this variable (replace the placeholder with your real key):
 
 ```bash
-REACT_APP_GEMINI_API_KEY=your_actual_gemini_api_key_here
+REACT_APP_GEMINI_API_KEY=YOUR_API_KEY_HERE
 ```
 
-**Important:** Make sure this `.env` file is not committed to GitHub (it contains sensitive keys). The `.env` file should already be in `.gitignore`.
+**Variable name:** `REACT_APP_GEMINI_API_KEY` — the app reads the key only from this env var.
+
+**Important:** Never commit the key. `.env` and `.env.local` are listed in `.gitignore`; keep it that way.
 
 ### Step 4 – Start the Development Server
 
@@ -61,7 +66,7 @@ The GitHub Pages deployment runs **without** the Gemini API key for security rea
 - Voice transcription features will be disabled
 - All other features (manual workout entry, history viewing, etc.) work normally
 
-To use Gemini features locally, set up the `.env` file as described in Step 3 above.
+To use Gemini features locally, set up `.env.local` (or `.env`) as described in Step 3 above.
 
 ## Project Links
 
