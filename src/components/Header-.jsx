@@ -40,7 +40,7 @@ export default function Header({ onMenuToggle }) {
         className="icon-btn header-menu-btn"
         aria-label={t('closeMenu')}
       >
-        <Menu size={32} />
+        <Menu size={24} />
       </button>
 
       {/* App title with logo */}

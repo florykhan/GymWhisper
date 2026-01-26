@@ -184,7 +184,7 @@ export default function HomePage({ workoutData, setWorkoutData }) {
       <Header onMenuToggle={() => setMenuOpen(m => !m)} />
 
       {/* Main Content */}
-      <main className="main">
+      <main className="main main--home">
         {/* Microphone Button */}
         <MicrophoneButton
           workoutData={workoutData}

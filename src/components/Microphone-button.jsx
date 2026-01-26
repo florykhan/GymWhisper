@@ -93,7 +93,7 @@ export default function MicrophoneButton({
     <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* Recording popup positioned above the mic */}
       {listening && (
-        <div className="recording-popup" style={{ position: 'absolute', top: '-80px', zIndex: 10 }}>
+        <div className="recording-popup recording-popup-above" style={{ position: 'absolute', zIndex: 10 }}>
           {t('clickAgainToStop')}
         </div>
       )}
@@ -105,12 +105,11 @@ export default function MicrophoneButton({
         aria-pressed={listening}
         aria-label={listening ? 'Stop recording' : 'Start recording'}
       >
-        {/* Simple microphone icon */}
+        {/* Simple microphone icon — size from .mic-icon */
         <svg 
           className={`mic-icon ${listening ? 'icon-white' : 'icon-primary'}`}
           viewBox="0 0 24 24" 
           fill="currentColor"
-          style={{ width: '80px', height: '80px' }}
         >
           <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
           <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
