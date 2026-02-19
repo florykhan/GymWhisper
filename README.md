@@ -1,6 +1,6 @@
 # 🎤 GymWhisper — Voice-Powered Workout Tracking
 
-This repository implements a **frontend web application** that enables hands-free workout logging through natural language voice input. Users tap a microphone, describe their workout in spoken words, and the application converts speech into structured workout data using AI — all running entirely in the browser with no backend persistence.
+This repository implements a **frontend web application** that enables hands-free workout logging through natural language voice input. Users tap a microphone, describe their workout in spoken words, and the application converts speech into structured workout data using AI, all running entirely in the browser with no backend persistence.
 
 ---
 
@@ -263,14 +263,25 @@ Although this version focuses on core voice-to-workout functionality, there are 
 
 ## 🧾 License
 
-MIT License — feel free to use and modify with attribution.
-
-See the [`LICENSE`](./LICENSE) file for full details (if present).
+MIT License, feel free to use and modify with attribution. See the [`LICENSE`](./LICENSE) file for full details (if present).
 
 ---
 
-## 👤 Author
 
-**GymWhisper Team**  
-_Simon Fraser University_  
-📍 Vancouver, BC  |  [GitHub](https://github.com/florykhan/GymWhisper)
+## 👤 Authors
+
+**Ilian Khankhalaev**  
+_BSc Computing Science, Simon Fraser University_  
+📍 Vancouver, BC  |  [florykhan@gmail.com](mailto:florykhan@gmail.com)  |  [GitHub](https://github.com/florykhan)  |  [LinkedIn](https://www.linkedin.com/in/ilian-khankhalaev/)
+
+**Nikolay Deinego**  
+_BSc Computing Science, Simon Fraser University_  
+📍 Vancouver, BC  | [GitHub](https://github.com/Deinick)  |  [LinkedIn](https://www.linkedin.com/in/nikolay-deinego/)
+
+**Sven Jensen**
+_BSc Computing Science, Simon Fraser University_  
+📍 Vancouver, ON  | [GitHub](https://github.com/svenweb)  |  [LinkedIn](https://www.linkedin.com/in/sven--jensen/)
+
+**Parminder Rhandawa**  
+_BSc Computing Science, Simon Fraser University_  
+📍 Vancouver, BC  |  [LinkedIn](https://www.linkedin.com/in/parminder-randhawa-35a2912b4/)
