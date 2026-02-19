@@ -1,9 +1,5 @@
 # 🎤 GymWhisper — Voice-Powered Workout Tracking
 
-[![Live Demo](https://img.shields.io/badge/live-demo-brightgreen)](https://florykhan.github.io/GymWhisper/)
-
-**→ [Try the live app](https://florykhan.github.io/GymWhisper/)**
-
 This repository implements a **frontend web application** that enables hands-free workout logging through natural language voice input. Users tap a microphone, describe their workout in spoken words, and the application converts speech into structured workout data using AI, all running entirely in the browser with no backend persistence.
 
 ---
