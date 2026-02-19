@@ -146,49 +146,7 @@ The app will automatically open in your default browser. You can now:
 - Speak your workout description (e.g., "I did 3 sets of bench press with 135 pounds, 10 reps each")
 - View the structured workout data in the workout panel
 - Navigate to the history page to see past workouts
-
----
-
-## 🚀 Deployment
-
-The app is automatically deployed to **GitHub Pages** via GitHub Actions when changes are pushed to the `main` branch.
-
-- **Live Website:** https://florykhan.github.io/GymWhisper/
-- **GitHub Repo:** https://github.com/florykhan/GymWhisper
-
-### Initial Setup (One-Time)
-
-**⚠️ IMPORTANT:** Before the first deployment, configure GitHub Pages settings:
-
-1. Go to: **https://github.com/florykhan/GymWhisper/settings/pages**
-2. Under **"Source"**, select: **"GitHub Actions"** (NOT "Deploy from a branch")
-3. Click **Save**
-
-After this one-time setup, deployments will happen automatically on every push to `main`.
-
-### Build Process
-
-The deployment workflow:
-1. Runs tests to ensure code quality
-2. Builds the React application using `npm run build:no-lint`
-3. Sets `PUBLIC_URL=/GymWhisper` to ensure correct asset paths on GitHub Pages
-4. Uploads the `build/` directory as a Pages artifact
-5. Deploys to GitHub Pages
-
-### Base Path Configuration
-
-The application uses **HashRouter** (instead of BrowserRouter) for client-side routing, ensuring compatibility with GitHub Pages static hosting. The `homepage` field in `package.json` (`https://florykhan.github.io/GymWhisper`) configures the base path for asset resolution.
-
-### Note on GitHub Pages Deployment
-
-The GitHub Pages deployment runs **without** the Gemini API key for security reasons. This means:
-- The app will load and function normally
-- A banner will appear at the top indicating Gemini AI is disabled
-- Voice transcription features will be disabled
-- All other features (manual workout entry, history viewing, etc.) work normally
-
-To use Gemini features locally, set up `.env.local` (or `.env`) as described in Step 3 above.
-
+  
 ---
 
 ## 🔐 Environment Variables
@@ -212,36 +170,16 @@ The application requires the following environment variable for full functionali
 
 ---
 
-## ⚠️ Limitations
-
-This project is designed as a **demo/prototype** and has the following limitations:
-
-- **No backend persistence:** All workout data is stored in browser localStorage and React state. Data is lost when the browser cache is cleared.
-- **API key exposure:** When using the Gemini API key in client-side code, it is exposed in the browser. For production use, API calls should be proxied through a secure backend.
-- **Static hosting constraints:** GitHub Pages deployment cannot securely store API keys, so AI features are disabled in the live deployment.
-- **Browser compatibility:** Speech recognition requires a modern browser with Web Speech API support (Chrome, Edge, Safari).
-- **No user accounts:** The application does not support multiple users or data synchronization across devices.
-
----
-
 ## 🚀 Future Directions (Beyond This Project)
 
 Although this version focuses on core voice-to-workout functionality, there are several **advanced directions** worth exploring in future iterations:
 
 - **Secure backend proxy:** Implement a backend API to proxy Gemini API calls, keeping API keys secure and enabling usage tracking and rate limiting.
-
-- **Workout history storage:** Add cloud database integration (Firebase, Supabase, or custom backend) to persist workout data across sessions and devices.
-
 - **User accounts and authentication:** Implement user registration and login to support multiple users and personalized workout tracking.
-
 - **Expanded exercise understanding:** Enhance AI prompts to recognize more exercise variations, supersets, rest periods, and advanced workout patterns.
-
 - **Data export and sharing:** Add functionality to export workouts as CSV, JSON, or PDF, and share workout plans with others.
-
 - **Progress visualization:** Implement charts and graphs to visualize strength progression, volume trends, and workout frequency over time.
-
 - **Workout templates and plans:** Allow users to create and save workout templates, and generate AI-suggested workout plans based on goals.
-
 - **Social features:** Add social sharing, workout challenges, and community features for motivation and accountability.
 
 ---
