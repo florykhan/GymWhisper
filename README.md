@@ -1,4 +1,4 @@
-# 🎤 GymWhisper — Voice-Powered Workout Tracking
+# 🎤 GymWhisper — Voice-Powered Workout Tracking [🔗 Live Demo](https://florykhan.github.io/GymWhisper/)
 
 This repository implements a **frontend web application** that enables hands-free workout logging through natural language voice input. Users tap a microphone, describe their workout in spoken words, and the application converts speech into structured workout data using AI, all running entirely in the browser with no backend persistence.
 
@@ -13,6 +13,12 @@ The goal of this project is to:
 - Operate as a **client-side only application** with no database or persistent backend, making it lightweight and privacy-focused.
 
 This project focuses on **demonstrating AI integration in frontend applications**, showcasing how modern web APIs (speech recognition) can be combined with AI services (Google Gemini) to create intuitive user experiences.
+
+---
+
+## 🌐 Live Demo
+
+The app is deployed on **GitHub Pages**. Try it here: **[https://florykhan.github.io/GymWhisper/](https://florykhan.github.io/GymWhisper/)**
 
 ---
 
