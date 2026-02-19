@@ -217,6 +217,7 @@ _BSc Computing Science, Simon Fraser University_
 📍 Vancouver, BC  | [GitHub](https://github.com/Deinick)  |  [LinkedIn](https://www.linkedin.com/in/nikolay-deinego/)
 
 **Sven Jensen**
+
 _BSc Computing Science, Simon Fraser University_  
 📍 Vancouver, ON  | [GitHub](https://github.com/svenweb)  |  [LinkedIn](https://www.linkedin.com/in/sven--jensen/)
 
