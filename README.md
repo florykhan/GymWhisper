@@ -34,6 +34,13 @@ This project focuses on **demonstrating AI integration in frontend applications*
 ```
 GymWhisper/
 │
+├── .github/                                 # GitHub configuration
+│   └── workflows/
+│       └── deploy.yml                       # GitHub Actions deployment workflow
+│
+├── docs/                                    # Project documentation
+│   └── [AI declaration PDFs]                # Academic AI declarations
+│
 ├── public/                                  # Static assets served by the app
 │   ├── index.html                           # Main HTML template
 │   ├── favicon.ico                          # App favicon
@@ -73,16 +80,6 @@ GymWhisper/
 │   ├── globals.css                          # Global styles
 │   ├── App.test.js                          # App component tests
 │   └── setupTests.js                        # Test configuration
-│
-├── .github/                                 # GitHub configuration
-│   └── workflows/
-│       └── deploy.yml                       # GitHub Actions deployment workflow
-│
-├── docs/                                    # Project documentation
-│   └── [AI declaration PDFs]                # Academic AI declarations
-│
-├── misc/                                    # Miscellaneous files
-│   └── blank.txt
 │
 ├── .gitignore
 ├── .eslintrc.js                             # ESLint config (legacy)
