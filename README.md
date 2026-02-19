@@ -20,6 +20,8 @@ This project focuses on **demonstrating AI integration in frontend applications*
 
 The app is deployed on **GitHub Pages**. Try it here: **[https://florykhan.github.io/GymWhisper/](https://florykhan.github.io/GymWhisper/)**
 
+**Demo**: **[Watch on YouTube](https://youtu.be/8XV7nmV9WvE?si=s2nRD_xhI5t3qtJC)**
+
 ---
 
 ## ✨ Key Features
