@@ -47,6 +47,9 @@ GymWhisper/
 ├── docs/                                    # Project documentation
 │   └── [AI declaration PDFs]                # Academic AI declarations
 │
+├── report/                                  # Project report
+│   └── CMPT276 - Final Report.pdf           # CMPT 276 final report (PDF)
+│
 ├── public/                                  # Static assets served by the app
 │   ├── index.html                           # Main HTML template
 │   ├── favicon.ico                          # App favicon
@@ -97,7 +100,13 @@ GymWhisper/
 ```
 
 > 🗒️ **Note:**  
-> The application is built as a **single-page application (SPA)** using React Router with HashRouter for GitHub Pages compatibility. All workout data is stored in React state and localStorage — there is no backend database. The `public/` directory contains static assets, while `src/` contains all application logic organized into components, contexts, and utilities.
+> The application is built as a **single-page application (SPA)** using React Router with HashRouter for GitHub Pages compatibility. All workout data is stored in React state and localStorage — there is no backend database. The `public/` directory contains static assets, while `src/` contains all application logic organized into components, contexts, and utilities. The **`report/`** folder contains the project report (see below).
+
+---
+
+## 📄 Project Report
+
+The CMPT 276 final report for this project is available as a PDF: **[CMPT276 - Final Report.pdf](report/CMPT276%20-%20Final%20Report.pdf)**.
 
 ---
 
