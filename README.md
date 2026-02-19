@@ -220,6 +220,6 @@ _BSc Computing Science, Simon Fraser University_
 _BSc Computing Science, Simon Fraser University_  
 📍 Vancouver, ON  | [GitHub](https://github.com/svenweb)  |  [LinkedIn](https://www.linkedin.com/in/sven--jensen/)
 
-**Parminder Rhandawa**  
+**Parminder Randhawa**  
 _BSc Computing Science, Simon Fraser University_  
 📍 Vancouver, BC  |  [LinkedIn](https://www.linkedin.com/in/parminder-randhawa-35a2912b4/)
