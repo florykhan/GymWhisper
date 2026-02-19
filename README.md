@@ -201,7 +201,7 @@ Although this version focuses on core voice-to-workout functionality, there are 
 
 ## 🧾 License
 
-MIT License, feel free to use and modify with attribution. See the [`LICENSE`](./LICENSE) file for full details (if present).
+MIT License, feel free to use and modify with attribution. See the [`LICENSE`](./LICENSE) file for full details.
 
 ---
 
