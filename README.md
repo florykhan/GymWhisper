@@ -1,5 +1,9 @@
 # 🎤 GymWhisper — Voice-Powered Workout Tracking
 
+[![Live Demo](https://img.shields.io/badge/live-demo-brightgreen)](https://florykhan.github.io/GymWhisper/)
+
+**→ [Try the live app](https://florykhan.github.io/GymWhisper/)**
+
 This repository implements a **frontend web application** that enables hands-free workout logging through natural language voice input. Users tap a microphone, describe their workout in spoken words, and the application converts speech into structured workout data using AI, all running entirely in the browser with no backend persistence.
 
 ---
@@ -37,6 +41,7 @@ GymWhisper/
 ├── public/                                  # Static assets served by the app
 │   ├── index.html                           # Main HTML template
 │   ├── favicon.ico                          # App favicon
+│   ├── favicon.svg                          # SVG favicon
 │   └── og-image.svg                         # Open Graph image
 │
 ├── src/                                     # Application source code
@@ -78,11 +83,17 @@ GymWhisper/
 │       └── deploy.yml                       # GitHub Actions deployment workflow
 │
 ├── docs/                                    # Project documentation
-│   └── [AI declaration PDFs]                # Academic declarations
+│   └── [AI declaration PDFs]                # Academic AI declarations
+│
+├── misc/                                    # Miscellaneous files
+│   └── blank.txt
 │
 ├── .gitignore
+├── .eslintrc.js                             # ESLint config (legacy)
+├── eslint.config.js                         # ESLint flat config
+├── favicon.ico                              # Root favicon (fallback)
 ├── package.json
-├── eslint.config.js
+├── package-lock.json
 └── README.md
 ```
 
