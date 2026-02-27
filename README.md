@@ -22,6 +22,9 @@ The app is deployed on **GitHub Pages**. Try it here: **[https://florykhan.githu
 
 **Demo**: **[Watch on YouTube](https://youtu.be/8XV7nmV9WvE?si=s2nRD_xhI5t3qtJC)**
 
+![GymWhisper](./public/GymWhisper.png)
+_Voice-powered workout tracking: tap the microphone, speak your workout, get structured data_
+
 ---
 
 ## ✨ Key Features
